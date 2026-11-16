@@ -1,0 +1,350 @@
+Subject: Undeliverable: MV. Star Challenger / Port Qasim Call / Terminal Required Documents
+From: Microsoft Outlook
+Date: 2026-09-13 10:17:02.252493
+Folder: SAMPLE
+
+DSN
+
+           Your message to  lvija_01@163.com  couldn't be delivered.
+
+           When Office 365 tried to send your message, the receiving email server outside Office 365 reported an error.
+
+                       ops.t4
+
+                       Office 365
+
+                       lvija_01
+
+                       Sender
+
+                         Action Required
+
+                       Policy violation or system error
+
+                   How to Fix It
+
+                   Check the "Reported Error" from the "Error Details" section shown below for more information about the problem. The error might tell you what went wrong and how to fix it. For example, if the error states that the message was blocked due to a potential virus or because the message was too large, try sending the message again without attachments.
+
+                   If you're not able to fix the problem, it's likely that only the recipient's email admin can fix it. Contact the recipient by some other means (by phone, for example) and ask them to tell their email admin about the problem. Give them the "Reported Error" from the "Error Details" section below.
+
+             Was this helpful?  Send feedback to Microsoft .
+
+More Info for Email Admins
+
+             Status code: 550 5.0.350
+
+The error reported by the receiving server wasn't specific enough to determine the exact nature of the problem. These errors often indicate the message violates a security or policy setting configured on the recipient's email servers.
+
+If the sender is unable to fix the problem by modifying their message, then it's likely a problem that only the recipient's email admin can fix. Try the following:
+
+ Check the error for information about the problem -  The "Reported Error" returned by the external email server can be found in the "Error Details" section below. This error might tell you what went wrong and provide clues for how to fix it. For example, if the error states the message was rejected due a Sender Policy Framework (SPF) issue, then you'll have to work with your domain registrar to correctly configure your domain's SPF records.
+
+ Check the error for information about where the problem is happening -  For example, look for a domain name like contoso.com. A domain name in the error might suggest who is responsible for the error. It could be the recipient's email server, or it could be a third-party service that your organization or the recipient's organization is using to process or filter email messages.
+
+ If you can't fix the problem, contact the responsible party's email admin -  Give them the error code and error message from this non-delivery report (NDR) to help them troubleshoot the issue. For security or policy violation issues, it might be sufficient for them to just add your sending IP addresses or domain to their allowed senders list.
+
+It's likely that only the recipient's email admin can fix the problem. Unfortunately, it's unlikely Office 365 Support will be able to help with these kinds of externally reported errors.
+
+           Original Message Details
+
+                   Created Date:
+
+                   9/13/2026 10:16:51 AM
+
+                   Sender Address:
+
+                   ops.t4@alpinemarine.com
+
+                   Recipient Address:
+
+                   lvija_01@163.com
+
+                   Subject:
+
+                   MV. Star Challenger / Port Qasim Call / Terminal Required Documents
+
+Error Details
+
+                   Error:
+
+                     550 5.0.350 Remote server returned an error -> 550 User not found: lvija_01@163.com
+
+                   Retry count:
+
+                     1
+
+                   Message rejected by:
+
+                   us-ntes-dx-163mx2.163.com
+
+Notification Details
+
+                   Sent by:
+
+                     AS1PR05MB9034.eurprd05.prod.outlook.com
+
+         Message Hops
+
+         HOP
+
+         TIME (UTC)
+
+         FROM
+
+         TO
+
+         WITH
+
+         RELAY TIME
+
+         1
+
+         9/13/2026
+10:16:51 AM
+
+         AMZPR05MB064900.eurprd05.prod.outlook.com
+
+         AMZPR05MB064900.eurprd05.prod.outlook.com
+
+         mapi
+
+         *
+
+         2
+
+         9/13/2026
+10:16:51 AM
+
+         AMZPR05MB064900.eurprd05.prod.outlook.com
+
+         AS1PR05MB9034.eurprd05.prod.outlook.com
+
+         Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384)
+
+         *
+
+     Original Message Headers
+
+     ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+
+ b=EyNEw/JivVgh7AIBX8LtMA58P3BfYJnlssS1MSv1mnz6AOGsM1FT3VqGBwIFDfAFna1pYjvhLx73jpPXTeTtqBdHXjKEtQkE0acl0P63nG6ZGWDo+78+ClafnI201YHJahUR4d7aVpbo961j3HZtKcGiqQ7kIeSka4cwJtuRbcWnqrvQmw1MYZNHIxtRA49JUWYj7xlZSMXhs5NTAK/s4ZlV3ITf3KJ0sKCFRIE5LgfzG5nfFWrZ8ATVMVRnyJkLoMEeMxWSwOkZ3Db+7yrfHj2waPP/aYjYXZDjns5tlDKuv1r9J3mUQGK6jJyUoocSzAhu/nI45ev0nKfS2jEFnA==
+
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+
+ s=arcselector10001;
+
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+
+ bh=5ACf/LDMFTVCCUffPRyZRT6KfoTL5vhLmMGPwzh5LE4=;
+
+ b=xgY+3UPejzSkEJfm3bcClnwmKycFj7xn5FZO/5DMY/OT6XLpHZpk9ZsXs2l80A1CUqhlReX0RjEsupdnEqG4fsijJ5VIyO+qc2GQUuRBDp36hYGYuEk4x7cRa5861hixLaNGDQumWtCkPJp4Jg6H0aH+FpX/KN4aS58WpdrLstDu3YASfGufsSWjDPpHhIxJM8e0Zw4kSD4/2pemx8If+mPUzXgOpwsW3EgMtYThdvLtEnEokwPH09dSgSNIcoi5zF7bsW3q8k5GZTge4NMsJ48K7O5UTN/h/nbaZQEQeBWsvfehqkWvs/KEaf4023E1whSxS+oMzvjkfG6JAIOvNg==
+
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+
+ smtp.mailfrom=alpinemarine.com; dmarc=pass action=none
+
+ header.from=alpinemarine.com; dkim=pass header.d=alpinemarine.com; arc=none
+
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=alpinemarine.com;
+
+ s=selector2;
+
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+
+ bh=5ACf/LDMFTVCCUffPRyZRT6KfoTL5vhLmMGPwzh5LE4=;
+
+ b=PrFiQm8/2rXtGX+nLzHLVD13+dER/Kl001rlePWcLnoDQziqDanCO6cWvVqWkDX3Twl0/rWuMNvqWaHl03NJEmQwXP/QzIVX7zICGVKm3i68oJk4UulQHBH2pynU8AYjFhJO8DIUinxfPvz5argS+6AXDHW8B5HXwGDna4kcFxJJGJNNb2V6ixcBKEkIALgUp2COXbxyBr2HCBwfCd45b2L23Tn9+WoUp3ag1chXM9ptkbXNuWT5UuX1sPIPDVjeIQxkOkvKAheED+VjeBMUwIcH0m9LKDpSTJ09s9sQMLJWgI9rgVpURtYEsqbC+/38U4lik6hHPz+bubnWdm8uCw==
+
+Received: from AMZPR05MB064900.eurprd05.prod.outlook.com
+
+ (2603:10a6:20b:7c5::14) by AS1PR05MB9034.eurprd05.prod.outlook.com
+
+ (2603:10a6:20b:4da::6) with Microsoft SMTP Server (version=TLS1_2,
+
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.406.11; Sun, 13 Sep
+
+ 2026 10:16:51 +0000
+
+Received: from AMZPR05MB064900.eurprd05.prod.outlook.com
+
+ ([fe80::d04f:bc62:a84c:c0df]) by AMZPR05MB064900.eurprd05.prod.outlook.com
+
+ ([fe80::d04f:bc62:a84c:c0df%5]) with mapi id 15.21.0406.007; Sun, 13 Sep 2026
+
+ 10:16:51 +0000
+
+From: "ops.t4@alpinemarine.com" <ops.t4@alpinemarine.com>
+
+To: "mbilalkhan77@gmail.com" <mbilalkhan77@gmail.com>
+
+CC: "salimsasoli2627@gmail.com" <salimsasoli2627@gmail.com>,
+
+	"lvija_01@163.com" <lvija_01@163.com>, "arifmengal02@gmail.com"
+
+	<arifmengal02@gmail.com>, "sikanderali_mangan@yahoo.com"
+
+	<sikanderali_mangan@yahoo.com>, "htkxmdongdayong@powerchina.cn"
+
+	<htkxmdongdayong@powerchina.cn>, "liangdingping@powerchina.cn"
+
+	<liangdingping@powerchina.cn>
+
+Subject: MV. Star Challenger / Port Qasim Call / Terminal Required Documents
+
+Thread-Topic: MV. Star Challenger / Port Qasim Call / Terminal Required
+
+ Documents
+
+Thread-Index: AQHdQ2j+N/3KhzYmqkWDke26pH55tQ==
+
+Date: Sun, 13 Sep 2026 10:16:51 +0000
+
+Message-ID: <VI0PR05MB1222146F8514CF8E436D50BDDB4BD2@VI0PR05MB12221.eurprd05.prod.outlook.com>
+
+References: <GVXPR05MB12343EBE6A9CB31E5AE820960F744A@GVXPR05MB12343.eurprd05.prod.outlook.com>
+
+ <AS4PR05MB923276DA96A6981155A1E5EE8E5CA@AS4PR05MB9232.eurprd05.prod.outlook.com>
+
+ <AS4PR05MB9232E0EAA3AD7A3C8F4E1EEF8E222@AS4PR05MB9232.eurprd05.prod.outlook.com>
+
+ <AS4PR05MB92326B4DB530C3ECA45D88528E2A2@AS4PR05MB9232.eurprd05.prod.outlook.com>
+
+ <DB9PR05MB9223D44704D7015136DAA2928E2B2@DB9PR05MB9223.eurprd05.prod.outlook.com>
+
+  <001401dcd55e$24e03db0$6ea0b910$@fcnvessels.com>
+
+ <AS4PR05MB9232D64BCD82827F9A0036288E312@AS4PR05MB9232.eurprd05.prod.outlook.com>
+
+ <AS4PR05MB923203D2B2DE6202BCC1FE308E392@AS4PR05MB9232.eurprd05.prod.outlook.com>
+
+ <AS4PR05MB9232D5C7E80D22613ED01BBB8E392@AS4PR05MB9232.eurprd05.prod.outlook.com>
+
+ <AS4PR05MB92325D43F6E3B62FD054CCEE8ED52@AS4PR05MB9232.eurprd05.prod.outlook.com>
+
+ <AS4PR05MB9232613720EEEC5F6B64F6918EAC2@AS4PR05MB9232.eurprd05.prod.outlook.com>
+
+ <VI0PR05MB122217DEA0A63B7E0AC187D04B4B42@VI0PR05MB12221.eurprd05.prod.outlook.com>
+
+In-Reply-To: <VI0PR05MB122217DEA0A63B7E0AC187D04B4B42@VI0PR05MB12221.eurprd05.prod.outlook.com>
+
+Accept-Language: en-US
+
+Content-Language: en-US
+
+X-MS-Has-Attach: yes
+
+X-MS-TNEF-Correlator:
+
+msip_labels:
+
+x-ms-reactions: allow
+
+authentication-results: dkim=none (message not signed)
+
+ header.d=none;dmarc=none action=none header.from=alpinemarine.com;
+
+x-ms-publictraffictype: Email
+
+x-ms-traffictypediagnostic: AMZPR05MB064900:EE_|AS1PR05MB9034:EE_
+
+x-ms-office365-filtering-correlation-id: 7e777b16-2f3f-414a-3330-08df1180209e
+
+x-ms-exchange-senderadcheck: 1
+
+x-ms-exchange-antispam-relay: 0
+
+x-microsoft-antispam: BCL:0;ARA:13230040|366016|23010399003|376014|6049299003|1800799024|38070700021|4053099003|56012099006|4143699003|10067099003|22082099003|18002099003|8096899003|13003099007;
+
+x-microsoft-antispam-message-info: HqEyd/DbA3PbecMHympFiy7pZi1z4PgHRgdXIij9lPy2YElPlmO2gtsKp+Gp2CTGigtyK5mVKSLLOVRZXccedEWLIpqULLu9YT9JEHlXKAm7GE87CiekYvDFxcEdjfpfF7zWEz1h4KtHhpTO2YW9jrX2upAN5FGnbTWMOB/BDe3VHxxhLgtG91HsfPPQ5WRC5LIpWSrBN8FsyBHVROS9J3DA4j+MPYnqkveVK60cvCIkYznxcv7Q6VcazOA8QQlcnHkbxu2du1CBCJPHbdYMfDV69p6W9DXZ/9LNvgKswwGYKBl8QlRV8xNiiVIIEnn1mUVCGdzR1o1Gka04yHcBwu714j9dMCtkIbDBmx5XgI4o+Srm2zbXfLFEoQKO0/w5RhdZq+lJuqzMl6VXgEpumAzZRxg/YddM5lLtZ6hBnmv5AJxg5wRXDz8WKmbOzLZ2iAx86jIW03bUjlxtgSqt1CbMIb0mR/GCDqecEn5lzjt0nZnfLrKqS1TonUHLAEucGBHP/KgI1CKG2hJB3JLWPwLgVbOJPFGDzD3IIPkT7+WpX8xsU28+SrzKmWyUfxZu4FQGZo+F9ympPc+FMvRhwM/Ue+zRTyLpORlC+t/hI8Q=
+
+x-forefront-antispam-report: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:AMZPR05MB064900.eurprd05.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(366016)(23010399003)(376014)(6049299003)(1800799024)(38070700021)(4053099003)(56012099006)(4143699003)(10067099003)(22082099003)(18002099003)(8096899003)(13003099007);DIR:OUT;SFP:1102;
+
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+
+x-ms-exchange-antispam-messagedata-0: =?us-ascii?Q?rFnlkueeZOkk+aDQlOg48y+WKL0C+kdRZdQTCR1hDDkExzoNRm3VxMu0skxe?=
+
+ =?us-ascii?Q?p5aVLoFnULqcoVfoPk307Lj7X/zCRE0xec3e8UVBaTW4hsBY8gpurR7ikUSM?=
+
+ =?us-ascii?Q?EOPzoAx9+PLnbeGltS9Ht8fGeGzIwi1Njap7xfAtSnT8MicQwiDpPPEbqo+7?=
+
+ =?us-ascii?Q?tV856KLOw3PzDM3bVnrMcig7ZYa4aQ5WWc3g9UjXzQ6c+9clAN+1p6evU5Fr?=
+
+ =?us-ascii?Q?E/wQPDHXq8y0WScudMSv0Z93mSilT8bcLa58BeWsGjvIrn/j5KQu1h7mDcYJ?=
+
+ =?us-ascii?Q?V4+ERgouQnDRBRICO3+aNA2EdlbAFqQfFSbDPloRwNnfbbSb2TBfdY+f0E/Y?=
+
+ =?us-ascii?Q?qnMHwmP0uazXKhZtq0MskSWgvhqDpBg2p6mUKYuYmrzrfyK5AbbVmCk/Z89l?=
+
+ =?us-ascii?Q?aMoa2uXHx+oGng9EeoqZWZfLXYY6QgpqkxMKEp/7SXVH8qAhxinwK6OtHe2q?=
+
+ =?us-ascii?Q?NOIALBWpS9i3RpN0UX5pAbTTKm4Hp5x+Iv45NpPYkPUs7ai0YvD6zExvu4av?=
+
+ =?us-ascii?Q?f+Cz7VsAKNyzjPsJo8e/kfeLuTiRoOgiTOqJOHS0i3Qoc73dt0yAV+xfKhpN?=
+
+ =?us-ascii?Q?P52yYqdW5uFvsrSkuon6x3m4b3i1/Yrgm7uL6o43VJGYhButk9OsKgQZtK2P?=
+
+ =?us-ascii?Q?GRN9pLhO9muG8QfGyQki5/yQSuCSoyHM8A0LkSJZrZR5Yhcwusoptg0wqofJ?=
+
+ =?us-ascii?Q?lLzomhHgEDu6K4sqX1z++LLZLNnmJ/dU6D66ZQwbFZ7tDaAuKpn1M8S3my22?=
+
+ =?us-ascii?Q?uyFBgWeERNeMy/fBpB9QA9FFAUvcscEPNlbthLZOdx7ek+7bGTa9p0bDpPoG?=
+
+ =?us-ascii?Q?4tkMt5F5rPPs/72pT7BfYk5LGCg0hbqwXm+g7UGl85X6X8oEgV1QVsfr31MT?=
+
+ =?us-ascii?Q?fYpkc1PcSvaa/qu0+CB1L7XzwL9e5kp4enIhiw9ssU+LLQygVgk9phomBE8o?=
+
+ =?us-ascii?Q?cqys6pQ3dSiZ2lbKffJ6Yh7j/nEGped3UxF9jNodxlN8d4VFiWccrXy6YONG?=
+
+ =?us-ascii?Q?uvDea5xNMvOV72zRAgBx+JECzNcPXKKdnW5Pk8wGPD+Ep2YbBH3yFKXoy009?=
+
+ =?us-ascii?Q?NTMJhBynMUHnsRdRARXy7r9i+si7RhBNmwUfEOHQPDbHrnhnnsxmcNO2HMwy?=
+
+ =?us-ascii?Q?yS7HZiTNhiekfO8yy0CA3Yflz/fpJZQuvbr135a1u39yQ4o+E+92jZAsPBQq?=
+
+ =?us-ascii?Q?DQAhZ9biDrEhPsAu0e9ZlXa8VEqCGvTI1acYNE4y4aol5VpOu9SVPMpxsyC7?=
+
+ =?us-ascii?Q?dZRDfDLvt9sv3Z1xf7fnMNSKsEJZPr7yB3w4pbUiepl4cJnKOjQXMznQCHJO?=
+
+ =?us-ascii?Q?+1GrzSBfbn7fz9jm43vRA81tkV4HrY5u7fyE/WbzOrjAsdhRoQ1K9h7xS7Yd?=
+
+ =?us-ascii?Q?11Nr3n3LBFvh5FfKaMwdrzPOXfRV0U16orQFE3IbxPsoXu1CYGCnGzLsirf/?=
+
+ =?us-ascii?Q?H8NimY4J/9FxCFFW9LGeynOz42xGmTOwfO/Bv+7uqCUMQ7+wMj+dxEOJlr6i?=
+
+ =?us-ascii?Q?X9LN9hZfvok4UEHOeAM/C54Pc4DsWlXxFdQoYjIaiupQVZUOhOUOLmgedWVo?=
+
+ =?us-ascii?Q?SkPp4u0BvY9OU+h2zqrGj8dmriCk72WuRwuJeIo7Xw7XryY6IciVGOM/0tV6?=
+
+ =?us-ascii?Q?QFG1H9TtERz4ru/j1mhjIzE+BNLM9zzGpcsp452VwsfTET81luxYizmdW4Kr?=
+
+ =?us-ascii?Q?z1ar+PaoKGB2jbwC/3GP+PXFbNb4r13V3/sXV9ind+AFZwLTp+PcGTyuQIWI?=
+
+ =?us-ascii?Q?YboJIpAE6VGWQ9A0GCCXT42YNRRnJvE=3D?=
+
+Content-Type: multipart/mixed;
+
+	boundary="_016_VI0PR05MB1222146F8514CF8E436D50BDDB4BD2VI0PR05MB12221eu_"
+
+MIME-Version: 1.0
+
+X-OriginatorOrg: alpinemarine.com
+
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+
+X-MS-Exchange-CrossTenant-AuthSource: AMZPR05MB064900.eurprd05.prod.outlook.com
+
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7e777b16-2f3f-414a-3330-08df1180209e
+
+X-MS-Exchange-CrossTenant-originalarrivaltime: 13 Sep 2026 10:16:51.0083
+
+ (UTC)
+
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+
+X-MS-Exchange-CrossTenant-id: 2e929637-0064-4126-bd01-d4c4b3717415
+
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+
+X-MS-Exchange-CrossTenant-userprincipalname: D9tOutdV9b2PFhb1uD5uEbiUWOtrYmBr8i0t60u/9h5PzifcG3x8k7wFVJlloH31npQTdrhsULsiQbKEB/Uw8A==
+
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS1PR05MB9034

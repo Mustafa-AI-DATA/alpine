@@ -1,0 +1,842 @@
+Received: from AS4PR05MB9471.eurprd05.prod.outlook.com (2603:10a6:20b:4ca::17)
+ by DU4PR05MB12693.eurprd05.prod.outlook.com with HTTPS; Tue, 3 Nov 2026
+ 12:01:23 +0000
+Received: from PA1PR05MB12848.eurprd05.prod.outlook.com
+ (2603:10a6:102:569::14) by AS4PR05MB9471.eurprd05.prod.outlook.com
+ (2603:10a6:20b:4ca::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.592.8; Tue, 3 Nov 2026
+ 12:01:18 +0000
+Received: from PA1PR05MB12848.eurprd05.prod.outlook.com
+ ([fe80::1d6f:f581:a955:8fb9]) by PA1PR05MB12848.eurprd05.prod.outlook.com
+ ([fe80::1d6f:f581:a955:8fb9%6]) with mapi id 15.21.0569.011; Tue, 3 Nov 2026
+ 12:01:18 +0000
+From: "ops.t4@alpinemarine.com" <ops.t4@alpinemarine.com>
+To: "jingdianchenguang@ctmail.1749.cn" <jingdianchenguang@ctmail.1749.cn>
+CC: =?gb2312?B?u/rO8S26zrLG?= <hzjwyang@newsealandnb.com>,
+	=?gb2312?B?u/rO8S3P7srAw/c=?= <hzjwxiang@newsealandnb.com>
+Subject: Re: MV. JING DIAN CHEN GUANG-1 / ETA KARACHI NOTICE 20261103
+Thread-Topic: MV. JING DIAN CHEN GUANG-1 / ETA KARACHI NOTICE 20261103
+Thread-Index: AQHda4Iatu1pbEY/RUWcA5zvrQJQ7LccPw0A
+Date: Tue, 3 Nov 2026 12:01:18 +0000
+Message-ID:
+	<PA1PR05MB12848F4E299EE96AA7D6ADC188C692@PA1PR05MB12848.eurprd05.prod.outlook.com>
+References: <20261103162615651296132@ctmail.1749.cn>
+In-Reply-To: <20261103162615651296132@ctmail.1749.cn>
+Accept-Language: en-US, en-GB
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	PA1PR05MB12848.eurprd05.prod.outlook.com
+X-MS-Exchange-Organization-ComplianceLabelId:
+	2148734e-0f36-42c8-b689-e33a13b7bdf6
+X-MS-Has-Attach: yes
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-MS-Exchange-Organization-Network-Message-Id:
+	c604d492-d812-4601-181c-08df39a22b60
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:zh-cn;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:PA1PR05MB12848.eurprd05.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(366016)(23010399003)(6049299003)(376014)(261022075727099003)(260925021311599003)(260925021911599003)(260925022911599003)(5023799004)(261022113327099003)(56012099006)(261009223027099003)(261102123227099003)(261028144727099003)(261021121427099003)(261022105027099003)(261021123027099003)(261026121527099003)(261026140227099003)(10067099003)(22082099003)(18002099003)(13003099007)(8096899003)(4053099003)(41050700001);DIR:INT;
+x-microsoft-antispam:
+	BCL:0;ARA:13230040|366016|23010399003|6049299003|376014|261022075727099003|260925021311599003|260925021911599003|260925022911599003|5023799004|261022113327099003|56012099006|261009223027099003|261102123227099003|261028144727099003|261021121427099003|261022105027099003|261021123027099003|261026121527099003|261026140227099003|10067099003|22082099003|18002099003|13003099007|8096899003|4053099003|41050700001;
+authentication-results: mx.microsoft.com 1; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=alpinemarine.com;
+x-ms-office365-filtering-correlation-id: c604d492-d812-4601-181c-08df39a22b60
+x-ms-traffictypediagnostic:
+	PA1PR05MB12848:EE_|AS4PR05MB9471:EE_|DU4PR05MB12693:EE_
+x-ms-exchange-messagesentrepresentingtype: 1
+x-ms-exchange-sharedmailbox-routingagent-processed: True
+x-ms-exchange-transport-crosstenantheadersstamped: AS4PR05MB9471
+x-ms-exchange-crosstenant-network-message-id:
+	c604d492-d812-4601-181c-08df39a22b60
+x-ms-exchange-crosstenant-originalarrivaltime: 03 Nov 2026 12:01:18.4212 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: 2e929637-0064-4126-bd01-d4c4b3717415
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+	p6Omk2pK92sl4rdD1OOKNgO1OB3c7TAqmYyErDU5XkjMoPZzd2rO/PENNAID1vXCQQRG0/m3bYkkwFf5eD+81p/HdBIHubXGNIfjVFMDhmQ=
+x-ms-exchange-transport-endtoendlatency: 00:00:05.2908582
+x-ms-exchange-processed-by-bccfoldering: 15.21.0569.002
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-authsource: PA1PR05MB12848.eurprd05.prod.outlook.com
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;auth:0;dest:C;OFR:CustomRules;ENG:(910005)(944506478)(944626604)(920097)(425001)(930201)(20251009284)(140003);
+X-Microsoft-Antispam-Message-Info:
+	iz+3aZ9X/ezhN2trppcrhq+Nv0R5hVKEWCmrk9GGIft2cEuV/9IYF6l1YoA5ZowjpZHyCXrkkjlEu0MvMsx9TiM5glD4oQrM3pvFiSE5oJ/NomchXyzsBKoK8OIL7qz0EVTEZd7rvJDYwcS6OvrGvCDZViQjONN68p4KHIU/JTkpa6NTuApiVLvjr1Re/MAoe6wV2K71hDVa5SH4AUxzMvd2RAZATSBFb/i49WcZMWoeHFh2THVkmubvHWABsc2K7OHVXJSSmMoEGJzk8WIw4Kf0NLgUBb8uiE8d9QV6wKvVQ0ZG2mGqg6ceZgsGavp4K3+6vtTyOaoU5u7S/03ofvlPuislB68OJF4wgVdAPCFlQju5Fxr9ungpUqARPsY0oxleOjf6x8A96rJGJysSxhh1FWLKzZKeBDJyShwtNm7HPuOZ37PEA+OBdJS4sSMRhCvFpKfCbN3scpL9M2LO1ajb9vsjxZ1U9/musnwuVsNfFPxH290cKt+NkQODv/PQfH8q4KUI7BX3+F4VGOVfaJZEZ78PPWDu+2PoRzrqFBMM0xB5/U0D4IH87CzAwZeV28heX158UrCQIqTKpQ5Xkbj0SBGca9oKEhi35HKEyGdvxpZDllrjG+P5OVzLNipEfYOkNrMfsQsC+2/Gz0wuBQ/zjbSTfRECL6weJ8HXchRX6btHbFyCEEQLCZdeAKYeqkLfR8DgOJT3dkh+7yaiFGqRehrzoBCttOv6Glj/qvvj+SHYXeO5dR/DJaNHT3uTX6oJuT4RW/WKybaFVvyl6fevW6NCqYgLD/NwQmJ7MbHfBt1ivNSUGpj4D55IBozLh6AFuwLgOsJatID/2dNITA==
+Content-Type: multipart/mixed;
+	boundary="_004_PA1PR05MB12848F4E299EE96AA7D6ADC188C692PA1PR05MB12848eu_"
+MIME-Version: 1.0
+
+--_004_PA1PR05MB12848F4E299EE96AA7D6ADC188C692PA1PR05MB12848eu_
+Content-Type: multipart/alternative;
+	boundary="_000_PA1PR05MB12848F4E299EE96AA7D6ADC188C692PA1PR05MB12848eu_"
+
+--_000_PA1PR05MB12848F4E299EE96AA7D6ADC188C692PA1PR05MB12848eu_
+Content-Type: text/plain; charset="gb2312"
+Content-Transfer-Encoding: base64
+
+RGVhciBDYXB0YWluLA0KDQoNClRoYW5rcyB5b3VyIGJlbG93IG1lc3NhZ2UuIFJlZ2FyZGluZyBz
+cGFyZXMsIHdlIHNoYWxsIGJlIHBsZWFzZWQgdG8gY29ubmVjdCB0aGUgc3BhcmVzIHRvIHRoZSB2
+ZXNzZWwgYXQgYmVydGguIFBsZWFzZSBub3RlIGFzIGZvbGxvd3M7DQoNCg0KDQpTcGFyZXMgQ2xl
+YXJhbmNlDQoNCmtpbmRseSBub3RlIHRoYXQgdGhlIHNwYXJlcyBvcmlnaW5hdGVkIGluIG9yIGFy
+cml2aW5nIGZyb20gSW5kaWEgYXJlIGNvbmZpc2NhdGVkIGJ5IHRoZSBjdXN0b21zIGFuZCBhcmUg
+bm90IGNsZWFyZWQgZm9yIGRlbGl2ZXJ5Lg0KDQoNCg0KMS4gTmVhcmVzdCBBaXJwb3J0DQoNCkpp
+bm5haCBJbnRlcm5hdGlvbmFsIEFpcnBvcnQgIEthcmFjaGkgKEtISSkNCg0KDQoNCjIuIE5vLiBv
+ZiBkYXlzIHJlcXVpcmVkIGZvciBjbGVhcmFuY2UgKyBvbi1ib2FyZCBkZWxpdmVyeQ0KDQpSZXF1
+aXJlcyA1LzYgd29ya2luZyBkYXlzIGFmdGVyIGxhbmRpbmcgb2YgU3BhcmVzIGF0IEFpcnBvcnQu
+DQoNCjMuIEN1dC1vZmYgZm9yIGFycml2YWwgQCBkZXN0aW5hdGlvbiBBaXJQb3J0DQoNCjUtNiBk
+YXlzIGJlZm9yZSBhcnJpdmFsIG9mIHZlc3NlbCBhdCBiZXJ0aA0KDQoNCg0KNC4gU3RvcmFnZQ0K
+DQpGaXJzdCAzIGRheXMgc3RvcmFnZSBpcyBmcmVlIG9mIGNoYXJnZSBmcm9tIGRhdGUgb2YgYXJy
+aXZhbC4gQWZ0ZXIgZnJlZSB0aW1lIFVTRCAxNTAvLSBpcyBjaGFyZ2VkIHBlciBkYXkuDQoNCjUu
+IExpc3Qgb2YgZG9jcyByZXF1aXJlZC4NCg0KRm9sbG93aW5nIGRvY3VtZW50cy9kZXRhaWxzIHdp
+bGwgYmUgbmVlZGVkIGZvciBwcm9jZXNzaW5nIG9mIGNsZWFyYW5jZSBmb3JtYWxpdGllczsNCg0K
+LSBDb3B5IG9mIEFpcndheSBCaWxsICh3aXRoIHJlbWFya3MgU2hpcCBzcGFyZXMgaW4gdHJhbnNp
+dCkNCg0KLSBDb3B5IG9mIENvbW1lcmNpYWwgSW52b2ljZSAmIHBhY2tpbmcgbGlzdCB3aXRoIHJl
+bWFya3M6IFNISVAgU1BBUkVTIElOIFRSQU5TSVQuDQoNCiAgKg0KQXR0YWNoZWQgbGV0dGVyIG5l
+ZWQgdG8gYmUgZmlsbGVkIGJ5IHRoZSBNYXN0ZXIgb2YgdmVzc2VsIGZvciBDdXN0b20NCg0KU2Nv
+cGUgb2Ygc2VydmljZXMgd291bGQgYmUgY2xvc2UgY29vcmRpbmF0aW9uIHdpdGggdGhlIGxvY2Fs
+IHZlbmRvcnMsIGFycmFuZ2luZyBwb3J0IHBlcm1pdHMsIHN1cHBseSBib2F0IGlmIHJlcXVpcmVk
+IGZvciBvbiBib2FyZCBzdXBwbGllcyAvIHNlcnZpY2UgYXR0ZW5kYW5jZS4NCg0KDQpDb21wbGV0
+ZSBDb25zaWduZWUgQWRkcmVzcw0KDQoNCg0KNi4gRnVsbCBzdHlsZSBjb25zaWduZWUgZGV0YWls
+cyAoZm9yIGJvdGggYWlyZnJlaWdodCBhbmQgQ291cmllcikNCg0KTWFzdGVyIG9mIE1WLiBKaW5n
+IERpYW4gQ2hlbiBHdWFuZw0KDQpDL28gQWxwaW5lIE1hcmluZSBTZXJ2aWNlcyAoUHJpdmF0ZSkg
+TGltaXRlZCwNCjM2IEEvNSwgQmVhY2ggSG90ZWwgUm9hZCwNCkxhbGF6YXIgRHJpdmUsDQpPZmYg
+TS5ULiBLaGFuIFJvYWQsDQpLYXJhY2hpIDc0MDAwLFBha2lzdGFuLg0KDQpQSUM6IENhcHQuIFJp
+endhbiBLYXptaQ0KQ2VsbDogKzkyIDMzMyAwNzk2MTYzDQpEaXJlY3Q6IExhbmRsaW5lICs5Mi0y
+MSAzNTY0MzMwMg0KDQoNCg0KNy4gQ2xlYXJhbmNlICsgT24tYm9hcmQgZGVsaXZlcnkgY2hhcmdl
+cw0KDQogICogICBVU0QgNTUwIC8tIHVwIHRvIDEwMCBLR3MgUGVyIEFXQiArIFVTJCAxNTAgRGVs
+aXZlcnkgQ2hhcmdlcw0KDQoNClBsZWFzZSBhZHZpc2UgdGhlIG1vZGUgb2YgcGF5bWVudCBmb3Ig
+dGhlIHNwYXJlIGRlbGl2ZXJ5LCB3aGV0aGVyIHRoZSBjaGFyZ2VzIHdpbGwgYmUgc2V0dGxlZCB0
+aHJvdWdoIGJhbmsgdHJhbnNmZXIgb3IgcGFpZCBkaXJlY3RseSBieSB0aGUgTWFzdGVyIGFnYWlu
+c3Qgb3VyIGludm9pY2UuDQoNCkJlbG93IGlzIHRoZSB2ZXNzZWwgbGluZSB1cCBmb3IgeW91ciBy
+ZWZlcmVuY2UgYW5kIHBlcnVzYWwuDQoNClRoYW5rcyAmIFJlZ2FyZHMsDQoNCg0KDQpBbnNhciBI
+dXNzYWluDQoNCkFzc2lzdGFudCBNYW5hZ2VyIC0gQ29tbWVyY2lhbCAoR3JhaW5zICYgRHJ5IEJ1
+bGsgLSBUZWFtIDQpDQoNCkFscGluZSBNYXJpbmUgU2VydmljZXMgKFByaXZhdGUpIExpbWl0ZWQN
+Cg0KMzYgQS81LCBCZWFjaCBIb3RlbCBSb2FkLCBMYWxhemFyIERyaXZlLCBPZmYgTSBUIEtoYW4g
+Um9hZA0KDQpLYXJhY2hpIDc0MDAwLCBQYWtpc3Rhbi4NCg0KRGlyZWN0OiArOTIgMjEgMzU2MTEg
+MDUxIHwgQ2VsbDogKzkyIDMzNSA5NTIgODk2NQ0KDQpQaG9uZTogKzkyIDIxIDM1NjExIDA1MSB8
+IEZheDogKzkyIDIxIDM1NjExIDA4MQ0KDQpUZWFtQDogT3BzLlQ0QGFscGluZW1hcmluZS5jb208
+bWFpbHRvOk9wcy5UNEBhbHBpbmVtYXJpbmUuY29tPiB8IFdlYjogd3d3LmFscGluZW1hcmluZS5j
+b208aHR0cHM6Ly91cmxkZWZlbnNlLmNvbS92My9fX2h0dHA6L3d3dy5hbHBpbmVtYXJpbmUuY29t
+L19fOyEhUGNSbEd5anAhWjMwZDVMeGhlQUxZRWlDYndsbHBTejREM2dmeTZSQzJkemxiSHBGdUF2
+MU1WSXVZRTdia0lkSTQ2Q25maWprVjBUVUJhN3kwMllWTVpGdVViTWpOczlBbzNlR3okPg0KDQoN
+Cl9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fDQpGcm9tOiBqaW5nZGlhbmNoZW5ndWFu
+Z0BjdG1haWwuMTc0OS5jbiA8amluZ2RpYW5jaGVuZ3VhbmdAY3RtYWlsLjE3NDkuY24+DQpTZW50
+OiBUdWVzZGF5LCBOb3ZlbWJlciAzLCAyMDI2IDE2OjI2DQpUbzogb3BzLnQ0QGFscGluZW1hcmlu
+ZS5jb20gPG9wcy50NEBhbHBpbmVtYXJpbmUuY29tPg0KQ2M6ILv6zvEtus6yxiA8aHpqd3lhbmdA
+bmV3c2VhbGFuZG5iLmNvbT47ILv6zvEtz+7KwMP3IDxoemp3eGlhbmdAbmV3c2VhbGFuZG5iLmNv
+bT4NClN1YmplY3Q6IE1WLiBKSU5HIERJQU4gQ0hFTiBHVUFORy0xIC8gRVRBIEtBUkFDSEkgTk9U
+SUNFIDIwMjYxMTAzDQoNCkRlYXIgQXFlZWwgLA0KR29vZCBkYXksDQoNCk91ciBoZWFkIG93bmVy
+IGhhcyBvbmUgc3BhcmUgcGFydCBzaGlwcGVkIHRvIHRoZSBzaGlwLiBDb3VsZCB5b3UgaGFuZGxl
+IGN1c3RvbXMgY2xlYXJhbmNlIGFuZCBkZWxpdmVyeSB0byB2ZXNzZWw/IElmIHNvLCBwbGVhc2Ug
+cHJvdmlkZSB5b3VyIHF1b3RhdGlvbiBmb3Igb3VyIHJlZmVyZW5jZS4NClRoZSBzcGFyZSBwYXJ0
+IGRldGFpbHMgYXMgZm9sbG93Og0KRGltZW5zaW9uOiA1NWNtocE1MGNtocEyNmNtDQpOZXQgd2Vp
+Z2h0OiAxMS42MCBrZw0KR3Jvc3Mgd2VpZ2h0OiAxMi4xMyBrZw0KDQpBd2FpdGluZyB5b3Vycy4N
+Cg0KX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18NClRLUyZCLlJHRFMgLyBDYXB0LiBY
+dSBCaW5nDQpNYXN0ZXIgb2YgTVYgSklORyBESUFOIENIRU4gR1VBTkcNCg0KSW5tYXJzYXQtQ6O6
+NDQxMjY3MjEwIC8gNDQxMjY3MjExDQpWc2F0LXBob25lOiAoMCkxNzQ5OTk1MjIxOShicmlkZ2Up
+IC8gKDApMTc0OTk5NTIyMjAobWFzdGVyIHJtKQ0KRkJCo7ooMDApODcwNzczMDYxMjc2DQpNb2I6
+ICgwMCk4NiAxMzk1ODIxMzA3OCh3ZWNoYXQpDQpFLW1haWyjumppbmdkaWFuY2hlbmd1YW5nQGN0
+bWFpbC4xNzQ5LmNuDQo=
+
+--_000_PA1PR05MB12848F4E299EE96AA7D6ADC188C692PA1PR05MB12848eu_
+Content-Type: text/html; charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dgb2312">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<p class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; ba=
+ckground-color: white; margin-top: 0px; margin-bottom: 0px;">
+<span style=3D"font-family: Calibri, Helvetica, sans-serif, serif, EmojiFon=
+t; font-size: 11pt; color: rgb(0, 36, 81);">Dear Captain,&nbsp;</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; ba=
+ckground-color: white; margin-top: 0px; margin-bottom: 0px;">
+<span style=3D"font-family: Calibri, Helvetica, sans-serif, serif, EmojiFon=
+t; font-size: 11pt; color: rgb(0, 36, 81);"><br>
+</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; ba=
+ckground-color: white; margin-top: 0px; margin-bottom: 0px;">
+<span style=3D"font-family: Calibri, Helvetica, sans-serif, serif, EmojiFon=
+t; font-size: 11pt; color: rgb(0, 36, 81);">Thanks your below message. Rega=
+rding spares, we shall be pleased to connect the spares&nbsp;to the vessel =
+at berth. Please note as follows;</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; ba=
+ckground-color: white; margin: 0cm;">
+<span style=3D"font-family: Calibri, Helvetica, sans-serif, serif, EmojiFon=
+t; font-size: 11pt; color: rgb(0, 36, 81);">&nbsp;</span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in;">
+<span style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 11pt=
+; color: rgb(0, 36, 81);"><b><u>Spares Clearance</u></b></span></p>
+<div id=3D"x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_Signature" class=3D"elementToProof=
+" style=3D"background-color: rgb(255, 255, 255); margin: 0px;">
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in; font-family: Aptos, san=
+s-serif;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: yellow;">kindly note that the spares&nbsp;originated in or arriving from =
+India are confiscated by the customs and
+ are not cleared for delivery.</span></p>
+</div>
+<div class=3D"elementToProof" style=3D"direction: ltr; text-align: left; te=
+xt-indent: 0px; background-color: rgb(255, 255, 255); margin: 0px; font-fam=
+ily: Calibri, Helvetica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81)=
+;">
+&nbsp;</div>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;"><b>1. Nearest Airport</b></span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in;">
+<span style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 11pt=
+; color: rgb(0, 36, 81);"><a name=3D"x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_=
+x_x_x_x_x_Signat" style=3D"color: rgb(0, 36, 81); margin: 0px;"></a></span>=
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;">Jinnah
+ International Airport&nbsp; Karachi (KHI)</span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;">&nbsp;</span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;"><b>2. No. of days required for clearance + on-board delivery</b><=
+/span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in 0in 8pt;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;">Requires 5/6 working days after landing of Spares&nbsp;at Airport=
+.</span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;"><b>3. Cut-off for arrival @ destination AirPort</b></span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;">5-6 days before arrival of vessel at berth</span></p>
+<div class=3D"elementToProof" style=3D"direction: ltr; text-align: left; te=
+xt-indent: 0px; background-color: white; margin: 0in; font-family: Calibri,=
+ Helvetica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81);">
+&nbsp;</div>
+<div class=3D"elementToProof" style=3D"background-color: rgb(255, 255, 255)=
+; margin: 0px 0px 8pt;">
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in; font-family: Aptos, san=
+s-serif;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;"><b>4. Storage</b></span></p>
+</div>
+<div class=3D"elementToProof" style=3D"background-color: rgb(255, 255, 255)=
+; margin: 0px 0px 8pt;">
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in; font-family: Aptos, san=
+s-serif;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;">First 3 days storage is free of charge from date of arrival. Afte=
+r free time USD 150/- is charged per
+ day.</span></p>
+</div>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;"><b>5. List of docs required.</b></span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in 0in 8pt;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;">Following documents/details will be needed for processing of&nbsp=
+;clearance&nbsp;formalities;</span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in 0in 8pt;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;">- Copy of Airway Bill (with remarks Ship spares&nbsp;in transit)<=
+/span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in 0in 8pt;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;">- Copy of Commercial Invoice &amp; packing list with remarks: SHI=
+P SPARES&nbsp;IN TRANSIT.</span></p>
+<ul style=3D"direction: ltr; text-align: left; margin-top: 0px; margin-bott=
+om: 0px; flex-direction: column; display: flex;">
+<li style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 11pt; =
+color: rgb(0, 36, 81); direction: ltr; align-self: start; margin: 0in 0in 8=
+pt; list-style-type: &quot;- &quot;;">
+<div class=3D"elementToProof" role=3D"presentation" style=3D"direction: ltr=
+; text-align: left; text-indent: 0px; background-color: white; margin: 0in =
+0px 8pt;">
+<span class=3D"spanWithBackgroundColor" style=3D"background-color: white;">=
+Attached letter need to be filled by the Master of vessel for Custom&nbsp;<=
+/span></div>
+</li></ul>
+<div class=3D"elementToProof" style=3D"direction: ltr; text-align: left; te=
+xt-indent: 0px; background-color: white; margin: 0in 0in 8pt; font-family: =
+Calibri, Helvetica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<span class=3D"spanWithBackgroundColor" style=3D"background-color: white;">=
+<br>
+Scope of services would be close coordination with the local vendors, arran=
+ging port permits, supply boat if required for on board supplies / service =
+attendance.</span></div>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;"><br>
+</span></p>
+<div class=3D"elementToProof" style=3D"direction: ltr; text-align: left; te=
+xt-indent: 0px; background-color: white; margin: 0in; font-family: Calibri,=
+ Helvetica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<span class=3D"spanWithBackgroundColor" style=3D"background-color: white;">=
+<b>Complete Consignee Address</b></span></div>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;">&nbsp;</span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;"><b>6. Full style consignee details (for both airfreight and Couri=
+er)</b><br>
+<br>
+<b><i>Master of MV. Jing Dian Chen Guang</i></b></span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;">C/o Alpine Marine Services (Private) Limited,<br>
+36 A/5, Beach Hotel Road,<br>
+Lalazar Drive,<br>
+Off M.T. Khan Road,<br>
+Karachi 74000,Pakistan.<br>
+<br>
+PIC: Capt. Rizwan Kazmi<br>
+Cell: +92&nbsp;333 0796163<br>
+Direct: Landline +92-21 35643302</span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;">&nbsp;</span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, Helv=
+etica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81); background-color=
+: white;"><b>7. Clearance + On-board delivery charges</b></span></p>
+<ul style=3D"direction: ltr; text-align: left; margin-top: 0px; margin-bott=
+om: 0px; list-style-type: disc; flex-direction: column; display: flex;">
+<li style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 11pt; =
+color: rgb(0, 36, 81); direction: ltr; align-self: start; margin: 0in;">
+<p class=3D"elementToProof" role=3D"presentation" style=3D"direction: ltr; =
+text-align: left; text-indent: 0px; background-color: white; margin-top: 0i=
+n; margin-bottom: 0in;">
+<span class=3D"spanWithBackgroundColor" style=3D"background-color: white;">=
+USD 550 /- up to 100 KGs Per AWB + US$ 150 Delivery Charges</span></p>
+<div class=3D"elementToProof" role=3D"presentation" style=3D"direction: ltr=
+; text-align: left; text-indent: 0px; background-color: white; margin: 0in =
+0px;">
+<br>
+</div>
+</li></ul>
+<div class=3D"elementToProof" style=3D"direction: ltr; text-align: left; te=
+xt-indent: 0px; background-color: white; margin: 0px 0in; font-family: Cali=
+bri, Helvetica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<span class=3D"spanWithBackgroundColor" style=3D"background-color: white;">=
+<b>Please advise the mode of payment for the spare delivery, whether the ch=
+arges will be settled through bank transfer or paid directly by the Master =
+against our invoice.&nbsp;</b></span></div>
+<div class=3D"elementToProof" style=3D"direction: ltr; text-align: left; te=
+xt-indent: 0px; background-color: white; margin: 0px 0in; font-family: Cali=
+bri, Helvetica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<span class=3D"spanWithBackgroundColor" style=3D"background-color: white;">=
+<b><br>
+</b></span></div>
+<div class=3D"elementToProof" style=3D"direction: ltr; text-align: left; te=
+xt-indent: 0px; background-color: white; margin: 0px 0in; font-family: Cali=
+bri, Helvetica, sans-serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<span class=3D"spanWithBackgroundColor" style=3D"background-color: white;">=
+Below is the vessel line up for your reference and perusal.
+</span><span style=3D"font-family: Calibri, Helvetica, sans-serif, serif, E=
+mojiFont;">&nbsp;</span></div>
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+background-color: white; margin: 0px; font-family: Calibri, Helvetica, sans=
+-serif, serif, EmojiFont; font-size: 11pt; color: rgb(0, 36, 81);">
+<br>
+</div>
+<div id=3D"x_Signature" class=3D"elementToProof" style=3D"background-color:=
+ rgb(255, 255, 255); margin: 0px;">
+<div class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+margin: 0px; font-family: Calibri, sans-serif, serif, EmojiFont; font-size:=
+ 11pt; color: rgb(0, 36, 81);">
+<span class=3D"spanWithBackgroundColor" style=3D"background-color: white;">=
+Thanks &amp; Regards,</span></div>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in 0in 0.0001pt;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, sans=
+-serif, serif, EmojiFont; font-size: 11pt; color: rgb(0, 36, 81); backgroun=
+d-color: white;">&nbsp;</span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in 0in 0.0001pt;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, sans=
+-serif, serif, EmojiFont; font-size: 11pt; color: rgb(0, 36, 81); backgroun=
+d-color: white;"><b>Ansar Hussain</b></span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in 0in 0.0001pt;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, sans=
+-serif, serif, EmojiFont; font-size: 11pt; color: rgb(0, 36, 81); backgroun=
+d-color: white;">Assistant Manager - Commercial (Grains &amp; Dry Bulk - Te=
+am 4)</span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in 0in 0.0001pt;">
+<span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibri, sans=
+-serif, serif, EmojiFont; font-size: 11pt; color: rgb(0, 36, 81); backgroun=
+d-color: white;"><b>Alpine Marine Services (Private) Limited</b></span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in 0in 0.0001pt;">
+<span style=3D"font-family: Calibri, sans-serif, serif, EmojiFont; font-siz=
+e: 11pt; color: rgb(0, 36, 81);">36 A/5, Beach Hotel Road, Lalazar Drive, O=
+ff M T Khan Road</span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in 0in 0.0001pt;">
+<span style=3D"font-family: Calibri, sans-serif, serif, EmojiFont; font-siz=
+e: 11pt; color: rgb(0, 36, 81);">Karachi 74000, Pakistan.</span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in 0in 0.0001pt;">
+<span style=3D"font-family: Calibri, sans-serif, serif, EmojiFont; font-siz=
+e: 11pt; color: rgb(0, 36, 81);">Direct: +92 21 35611 051 | Cell: +92 335 9=
+52 8965&nbsp;</span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in 0in 0.0001pt;">
+<span style=3D"font-family: Calibri, sans-serif, serif, EmojiFont; font-siz=
+e: 11pt; color: rgb(0, 36, 81);">Phone: +92 21 35611 051 | Fax: +92 21 3561=
+1 081</span></p>
+<p class=3D"elementToProof" style=3D"direction: ltr; text-align: left; text=
+-indent: 0px; background-color: white; margin: 0in 0in 0.0001pt;">
+<span style=3D"font-family: Calibri, sans-serif, serif, EmojiFont; font-siz=
+e: 11pt; color: rgb(0, 36, 81);">Team@:
+</span><span class=3D"spanWithBackgroundColor" style=3D"font-family: Calibr=
+i, sans-serif, serif, EmojiFont; font-size: 11pt; color: rgb(0, 32, 96); ba=
+ckground-color: white;"><a href=3D"mailto:Ops.T4@alpinemarine.com" id=3D"OW=
+Acbd1a3d2-9c19-a6e0-aeb8-58b8db8a9d2a" class=3D"x_x_x_x_x_x_x_x_x_x_x_x_x_x=
+_x_OWAAutoLink" title=3D"mailto:Ops.T4@alpinemarine.com" data-linkindex=3D"=
+0" style=3D"color: rgb(0, 32, 96); margin: 0px;"><u>Ops.T4@alpinemarine.com=
+</u></a></span><span style=3D"font-family: Calibri, sans-serif, serif, Emoj=
+iFont; font-size: 11pt; color: rgb(0, 36, 81);">&nbsp;|
+ Web: </span><span class=3D"spanWithBackgroundColor" style=3D"font-family: =
+Calibri, sans-serif, serif, EmojiFont; font-size: 11pt; color: rgb(0, 32, 9=
+6); background-color: white;"><a href=3D"https://urldefense.com/v3/__http:/=
+www.alpinemarine.com/__;!!PcRlGyjp!Z30d5LxheALYEiCbwllpSz4D3gfy6RC2dzlbHpFu=
+Av1MVIuYE7bkIdI46CnfijkV0TUBa7y02YVMZFuUbMjNs9Ao3eGz$" target=3D"_blank" id=
+=3D"OWA779342f8-d4b3-2a5c-c4b3-b3802eb027aa" class=3D"x_x_x_x_x_x_x_x_x_x_x=
+_x_x_x_x_OWAAutoLink" title=3D"https://urldefense.com/v3/__http:/www.alpine=
+marine.com/__;!!PcRlGyjp!Z30d5LxheALYEiCbwllpSz4D3gfy6RC2dzlbHpFuAv1MVIuYE7=
+bkIdI46CnfijkV0TUBa7y02YVMZFuUbMjNs9Ao3eGz$" rel=3D"noopener noreferrer" da=
+ta-auth=3D"NotApplicable" data-linkindex=3D"1" style=3D"color: rgb(0, 32, 9=
+6); margin: 0px;"><u>www.alpinemarine.com</u></a></span></p>
+</div>
+<div id=3D"Signature" class=3D"elementToProof">
+<div class=3D"elementToProof" style=3D"font-family: Calibri, Helvetica, san=
+s-serif; font-size: 11pt; color: rgb(0, 36, 81);">
+<br>
+</div>
+</div>
+<div id=3D"appendonsend"></div>
+<div style=3D"line-height: 1.5; font-family: Calibri, Helvetica, sans-serif=
+; font-size: 11pt; color: rgb(0, 36, 81);">
+<br>
+</div>
+<hr style=3D"display: inline-block; width: 98%;">
+<div id=3D"divRplyFwdMsg">
+<div style=3D"direction: ltr; line-height: 1.5; font-family: Calibri, sans-=
+serif; font-size: 11pt; color: rgb(0, 0, 0);">
+<b>From:</b> jingdianchenguang@ctmail.1749.cn &lt;jingdianchenguang@ctmail.=
+1749.cn&gt;<br>
+<b>Sent:</b> Tuesday, November 3, 2026 16:26<br>
+<b>To:</b> ops.t4@alpinemarine.com &lt;ops.t4@alpinemarine.com&gt;<br>
+<b>Cc:</b> =BB=FA=CE=F1-=BA=CE=B2=C6 &lt;hzjwyang@newsealandnb.com&gt;; =BB=
+=FA=CE=F1-=CF=EE=CA=C0=C3=F7 &lt;hzjwxiang@newsealandnb.com&gt;<br>
+<b>Subject:</b> MV. JING DIAN CHEN GUANG-1 / ETA KARACHI NOTICE 20261103</d=
+iv>
+<div style=3D"direction: ltr; line-height: 1.5; font-family: &quot;Microsof=
+t YaHei UI&quot;; font-size: 14px; color: rgb(0, 0, 0);">
+&nbsp;</div>
+</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 14px; color: rgb(0, 0, 0);">
+Dear <span class=3D"spanWithBackgroundColor" style=3D"background-color: rgb=
+a(0, 0, 0, 0);">
+Aqeel</span>&nbsp;,</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 14px; color: rgb(0, 0, 0);">
+Good day,</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 14px; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 14px; color: rgb(0, 0, 0);">
+Our head owner has one spare part shipped to the ship. Could you handle cus=
+toms clearance and delivery to vessel? If so, please provide your quotation=
+ for our reference.</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 14px; color: rgb(0, 0, 0);">
+The spare part details as follow:</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 14px; color: rgb(0, 0, 0);">
+Dimension: 55cm=A1=C150cm=A1=C126cm</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 14px; color: rgb(0, 0, 0);">
+Net weight: 11.60 kg</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 14px; color: rgb(0, 0, 0);">
+Gross weight: 12.13 kg</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 14px; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 14px; color: rgb(0, 0, 0);">
+Awaiting yours.</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 14px; color: rgb(0, 0, 0);">
+<br>
+</div>
+<hr align=3D"left" size=3D"1" style=3D"line-height: 1.5; width: 210px; heig=
+ht: 1px;">
+<div style=3D"line-height: 1.5; font-family: Verdana; font-size: 14px; colo=
+r: rgb(51, 51, 153);">
+<span style=3D"font-size: 13.3333px;">TKS&amp;B.RGDS / </span>Capt. Xu Bing=
+</div>
+<div style=3D"line-height: 1.5; font-family: Verdana; font-size: 14px; colo=
+r: rgb(51, 51, 153);">
+<b>Master of MV JING DIAN CHEN GUANG</b></div>
+<div style=3D"line-height: 1.5; font-family: verdana; font-size: 13.3333px;=
+ color: rgb(51, 51, 153);">
+<br>
+</div>
+<div style=3D"line-height: 1.5; font-family: verdana; font-size: 13.3333px;=
+ color: rgb(51, 51, 153);">
+Inmarsat-C=A3=BA441267210 / 441267211</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 13.3333px; color: rgb(51, 51, 153);">
+Vsat-phone: (0)17499952219(bridge) / (0)17499952220(master rm)</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 13.3333px; color: rgb(51, 51, 153);">
+FBB=A3=BA(00)870773061276</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 14px; color: rgb(51, 51, 153);">
+Mob: (00)86 13958213078(wechat)</div>
+<div style=3D"line-height: 1.5; font-family: &quot;Microsoft YaHei UI&quot;=
+; font-size: 14px; color: rgb(51, 51, 153);">
+E-mail=A3=BAjingdianchenguang@ctmail.1749.cn</div>
+</body>
+</html>
+
+--_000_PA1PR05MB12848F4E299EE96AA7D6ADC188C692PA1PR05MB12848eu_--
+
+--_004_PA1PR05MB12848F4E299EE96AA7D6ADC188C692PA1PR05MB12848eu_
+Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document;
+	name="Master Request Letter For Spare Clearance - PKKHI.docx"
+Content-Description: Master Request Letter For Spare Clearance - PKKHI.docx
+Content-Disposition: attachment;
+	filename="Master Request Letter For Spare Clearance - PKKHI.docx";
+	size=15795; creation-date="Tue, 03 Nov 2026 12:00:33 GMT";
+	modification-date="Tue, 03 Nov 2026 12:01:23 GMT"
+Content-Transfer-Encoding: base64
+
+UEsDBBQABgAIAAAAIQCA0VzDeQEAAJIFAAATAAgCW0NvbnRlbnRfVHlwZXNdLnhtbCCiBAIooAAC
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC0
+lMtqwzAQRfeF/oPRtsRKuiilxMmiDyj0BU0/YCKNE1NZEtLk9fcdx4kpJS+aZGOQZ+69Z2RL3f68
+NMkUQyyczUQnbYsErXK6sKNMfA2eWrciiQRWg3EWM7HAKPq9y4vuYOExJqy2MRNjIn8nZVRjLCGm
+zqPlSu5CCcTLMJIe1DeMUF632zdSOUtoqUWVh+h1HzCHiaHkcc6va5KAJorkvm6ssjIB3ptCAXFd
+Tq3+k9JaJaSsXPbEceHjFTcIuTGhqmwPWOneeWtCoTH5gEBvUHKXnLmgpXZqUrIy3W2zgdPleaGw
+0VduPjiFMfKelyZtKiUUds2/lSPSwmA8PUXtuz8eiVhwDoCV816EGQ4/z0bxy3wvSM65AxgaPD1G
+Y70XgvgEYv3sHM2xtNkVyZ0fwfnIJzr8Y+z1ka3ULR7YY6Bi91/XJLL10fNhdRto1IdnvyKBBgL5
+AkM0zzZ3B0CU6+BUGeBPmq+KpvJoEuXyRu39AAAA//8DAFBLAwQUAAYACAAAACEA+5llRx8BAADg
+AgAACwAIAl9yZWxzLy5yZWxzIKIEAiigAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKySwUoDMRCG74LvEHLvznYVEem2FxEWFETqA4zJ7Da4
+yYQkavv2ptKiK+3SQ4/5559/vhkyW6xtLz4pRMOultOilIKcYm1cV8vX5cPkVoqY0Gns2VEtNxTl
+Yn55MXuhHlNuiivjo8gpLtZylZK/A4hqRRZjwZ5crrQcLKb8DB14VO/YEVRleQPhb4acDzJFo2sZ
+Gn0lxXLj6ZRsbluj6J7VhyWXDowAWidymvTEh9wfksnbiCWGjlItNavnLEdA74scLeEwUXU60fFt
+wVJCjQlBcaBxnq1jDGh6zhMNHb80Xxw06J08RnN9hMYaFThymwrFdjcmA1QllNU/BtVjjCYbfrQe
+36gf3uVpf7zHba1xLe+JYPAv598AAAD//wMAUEsDBBQABgAIAAAAIQBxcKUU8gcAAJgqAAARAAAA
+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
+
+--_004_PA1PR05MB12848F4E299EE96AA7D6ADC188C692PA1PR05MB12848eu_--
