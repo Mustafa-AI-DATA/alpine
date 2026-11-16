@@ -4,7 +4,10 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 ROOT = Path(__file__).resolve().parent.parent
+# Local .env (ignored on Vercel where env vars are injected)
 load_dotenv(ROOT / ".env")
+load_dotenv(Path(__file__).resolve().parent / ".env")
+
 
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "")
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "")
