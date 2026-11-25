@@ -75,21 +75,51 @@ def extract_query_entities(question: str) -> dict:
 
     wants_tariff = bool(
         re.search(
-            r"\b(tariff|pilotage|berth\s*fee|port\s*dues|anchorage|grt|nrt|calculate|rate|charges?|cost)\b",
+            r"\b(tariff|pilotage|berth\s*fee|port\s*dues|anchorage|grt|nrt|calculate|rate|charges?|cost|"
+            r"kitna\s+(lagega|hoga)|total\s+rate)\b",
             low,
         )
     )
     wants_crewing = bool(re.search(r"\b(crew|on-?signer|off-?signer|oktb|landing\s*permit)\b", low))
     wants_spares = bool(re.search(r"\bspares?\b", low))
     wants_prearrival = bool(
-        re.search(r"\b(pre-?arrival|psw|fal|ship documents|document list)\b", low)
+        re.search(
+            r"\b(pre-?arrival|psw|fal|ship documents|document list|pakistan\s+call|"
+            r"pre\s*arrival\s+document)\b",
+            low,
+        )
     )
     wants_draft = bool(
-        re.search(r"\b(draft\s+(an?\s+)?email|write\s+(an?\s+)?email|compose\s+(an?\s+)?email|email\s+draft)\b", low)
+        re.search(
+            r"\b(draft\s+(an?\s+)?email|write\s+(an?\s+)?email|compose\s+(an?\s+)?email|email\s+draft|"
+            r"email\s+draft\s+taiyar|draft\s+taiyar|taiyar\s+karo|outbox|outlook\s+ke\s+liye)\b",
+            low,
+        )
     )
     wants_calc = bool(
-        re.search(r"\b(calculate|computation|how\s+much|total\s+cost|for\s+\d+\s*days?)\b", low)
-    ) or (wants_tariff and bool(re.search(r"\b\d+(\.\d+)?\s*(grt|nrt|days?)\b", low)))
+        re.search(
+            r"\b(calculate|computation|how\s+much|total\s+(cost|rate)|step-?by-?step|"
+            r"for\s+\d+\s*(days?|din)|"
+            r"\d+\s*(days?|din)\s*(ke\s+liye)?)\b",
+            low,
+        )
+    ) or (wants_tariff and bool(re.search(r"\b\d+(\.\d+)?\s*(grt|nrt|days?|din)\b", low)))
+
+    # Meta / policy-only questions (empty retrieval). Do NOT flag draft requests
+    # that merely say "send mat karo", or factual Qs that also say "don't invent".
+    is_policy = False
+    if not wants_draft and not wants_tariff and not wants_calc and not wants_prearrival:
+        is_policy = bool(
+            re.search(
+                r"(send\s+kar\s+sakte|khud\s+se\s+email\s+send|"
+                r"record\s+mein\s+koi\s+value|rule\s+nahi\s+milta|"
+                r"kisi\s+vessel\s+ka\s+naam\s+nahi|kyun\s+kar\s+rahe|"
+                r"why\s+.*(mv\s*star|star\s*challenger)|"
+                r"can\s+you\s+send|"
+                r"if\s+(no|not).*(data|record|rule))",
+                low,
+            )
+        )
 
     doc_types: list[str] = []
     if wants_tariff or wants_calc:
@@ -98,7 +128,7 @@ def extract_query_entities(question: str) -> dict:
         doc_types.append("crewing_sop")
     if wants_spares:
         doc_types.append("spares")
-    if wants_prearrival:
+    if wants_prearrival or (wants_draft and not wants_tariff):
         doc_types.append("pre_arrival")
 
     grt = None
@@ -113,12 +143,25 @@ def extract_query_entities(question: str) -> dict:
     m = re.search(r"\b(\d{3,6}(?:\.\d+)?)\s*nrt\b", low)
     if m:
         nrt = float(m.group(1))
+    m = re.search(r"\bnrt\s*[:=]?\s*(\d{3,6}(?:\.\d+)?)\b", low)
+    if m and nrt is None:
+        nrt = float(m.group(1))
     m = re.search(r"\b(\d{1,3}(?:\.\d+)?)\s*days?\b", low)
     if m:
         days = float(m.group(1))
+    m = re.search(r"\b(\d{1,3}(?:\.\d+)?)\s*din\b", low)
+    if m and days is None:
+        days = float(m.group(1))
+    m = re.search(r"\b(\d{1,3}(?:\.\d+)?)\s*din\s*ke\s*liye\b", low)
+    if m and days is None:
+        days = float(m.group(1))
 
-    # If user did not name a vessel, mark that Star must not be injected
-    mention_star = bool(re.search(r"\bstar\s*challenger\b|\bmv\s*star\b", low))
+    # Only true if user is asking ABOUT that vessel — not meta "why mention Star"
+    mention_star = bool(
+        re.search(r"\bstar\s*challenger\b|\bmv\.?\s*star\b|\bmt\.?\s*star\b", low)
+    ) and not bool(
+        re.search(r"(kyun|why).{0,40}(star|naam\s+nahi)|naam\s+nahi\s+liya", low)
+    )
 
     return {
         "vessels": vessels,
@@ -134,6 +177,7 @@ def extract_query_entities(question: str) -> dict:
         "nrt": nrt,
         "days": days,
         "mention_star": mention_star,
+        "is_policy": is_policy,
         "source_path": "",
     }
 

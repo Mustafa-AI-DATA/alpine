@@ -145,24 +145,35 @@ def retrieve(index, namespace: str, question: str, k: int = 8) -> tuple[list[dic
 
     collected = _dedupe(collected)
 
-    # Soft / hard filter Star Challenger bias when not requested
-    if not entities.get("mention_star") and not any(
+    # Hard ban Star Challenger when user did not name that vessel
+    allow_star = bool(entities.get("mention_star")) or any(
         "star" in (v or "").lower() for v in (entities.get("vessels") or [])
-    ):
-        non_star = [h for h in collected if not _is_star_chunk(h)]
-        star = [h for h in collected if _is_star_chunk(h)]
-        # Prefer non-star; keep at most 1 star chunk only if we have almost nothing else
-        if len(non_star) >= 3:
-            collected = non_star
-        else:
-            collected = non_star + star[:1]
+    )
+    if not allow_star:
+        collected = [h for h in collected if not _is_star_chunk(h)]
 
-    # Prefer tariff/crewing chunks when those intents are active
+    # Prefer tariff/crewing/pre_arrival chunks when those intents are active
     preferred_types = set(entities.get("doc_types") or [])
     if preferred_types:
         preferred = [h for h in collected if h.get("doc_type") in preferred_types]
         other = [h for h in collected if h.get("doc_type") not in preferred_types]
         collected = preferred + other
+
+    # Policy / meta questions: do not ground on vessel email trails
+    if entities.get("is_policy"):
+        collected = []
+
+    # Draft / pre-arrival with empty pool after Star ban: retry topic search
+    if not collected and (entities.get("wants_draft") or entities.get("wants_prearrival")):
+        for q in (
+            "Pakistan call ship documents PSW FAL forms pre-arrival list",
+            "pre-arrival mandatory documents for Pakistan port call",
+            "list of ship documents for Pakistan call",
+        ):
+            collected.extend(_search_raw(index, namespace, q, top_k=8))
+        collected = _dedupe(collected)
+        if not allow_star:
+            collected = [h for h in collected if not _is_star_chunk(h)]
 
     # Sort by score desc
     collected.sort(key=lambda h: h.get("score", 0), reverse=True)

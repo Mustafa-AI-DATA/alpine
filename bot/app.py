@@ -30,7 +30,7 @@ SYSTEM = """You are Alpine Marine Ops Assistant (Stage 1) — internal ops desk 
 HARD RULES:
 1. Answer ONLY from the provided Context and any Calculation block. Do not invent rates or documents.
 2. Do NOT mention vessels, ports, or cases that are not in the user question AND not required by the Context.
-3. Especially: do NOT bring up "MV Star Challenger" / "MV Star" unless the user asked about that vessel or the Context is exclusively about it and relevant.
+3. Especially: do NOT bring up "MV Star Challenger" / "MV Star" / "MT Star" unless the user explicitly named that vessel. If Context somehow contains it but the user did not name it, ignore those chunks and do not mention the vessel.
 4. If Context contains the answer, use it. Never say "data not available" when Context clearly has the figures or lists.
 5. For tariff numbers, prefer the Calculation block when present; keep every figure from it.
 6. Cite source filenames briefly at the end (from Context labels / Calculation).
@@ -627,7 +627,9 @@ def _build_user_prompt(question: str, hits: list[dict], entities: dict, calc_tex
         blocks.append(
             "User requested an email draft. Output: short lead line, then "
             "**DRAFT — not sent**, then Subject: and Body ready to paste. "
-            "Do not claim it was sent."
+            "Do not claim it was sent. "
+            "Do NOT put MV Star Challenger (or any vessel) in Subject/Body unless the user named that vessel. "
+            "If vessel unknown, use placeholders like [VESSEL NAME] / [MASTER]."
         )
     if entities.get("wants_calc") or entities.get("wants_tariff"):
         blocks.append(
@@ -656,23 +658,74 @@ def ask():
     if not PINECONE_API_KEY or not DEEPSEEK_API_KEY:
         return jsonify({"error": "API keys missing in .env"}), 500
 
-    # Phase-2 guard: refuse autonomous send
-    if re.search(r"\b(send|email this to|mail it to|dispatch to client)\b", question.lower()) and re.search(
-        r"\b(client|owner|charterer|master|captain)\b", question.lower()
+    qlow = question.lower()
+
+    # Capability: can you send? (even if the sentence also mentions "draft")
+    if re.search(
+        r"(send\s+kar\s+sakte|khud\s+se\s+email\s+send|can\s+you\s+send|"
+        r"email this to|mail it to|dispatch to client)",
+        qlow,
+    ) and not re.search(r"(draft\s+taiyar|email\s+draft\s+taiyar|taiyar\s+karo.*outbox|send\s+mat\s+karo)", qlow):
+        return jsonify(
+            {
+                "answer": (
+                    "**Direct answer:** Stage 1 mein main client ko email **send nahi** kar sakta.\n\n"
+                    "**Details**\n"
+                    "- Main data retrieve karta hoon aur **email draft** bana sakta hoon (Outlook/outbox ke liye paste-ready).\n"
+                    "- Draft hamesha **DRAFT — not sent** label ke sath aata hai.\n"
+                    "- Actual send aap / ops team khud karegi. Client send **Phase 2** mein planned hai."
+                ),
+                "sources": [],
+                "stage": 1,
+            }
+        )
+
+    # Meta: why mention Star — only when that IS the question (no tariff/port ask)
+    factual_ask = bool(
+        re.search(r"\b(tariff|berth|pilotage|port\s*qasim|grt|nrt|pre-?arrival|document)\b", qlow)
+    )
+    if (not factual_ask) and re.search(
+        r"(kyun\s+kar\s+rahe|naam\s+nahi\s+liya|"
+        r"why.*(mv\s*star|star\s*challenger))",
+        qlow,
     ):
-        if not re.search(r"\bdraft\b", question.lower()):
-            return jsonify(
-                {
-                    "answer": (
-                        "Stage 1 does not send emails to clients. "
-                        "I can prepare an email DRAFT for your review/outbox. "
-                        "Client send is planned for Phase 2. "
-                        "Please ask me to draft the email instead."
-                    ),
-                    "sources": [],
-                    "stage": 1,
-                }
-            )
+        return jsonify(
+            {
+                "answer": (
+                    "**Direct answer:** Agar aap ne vessel ka naam nahi liya, to mujhe **MV Star / MT Star / Star Challenger** "
+                    "ka zikr **nahi** karna chahiye.\n\n"
+                    "**Details**\n"
+                    "- Stage 1 rule: sirf wahi vessel/port/detail jo aap ne poochi ho.\n"
+                    "- Index mein Star Challenger emails zyada hain; bina naam ke unhen suppress kiya jata hai.\n"
+                    "- Farzi naam ya invent ki hui detail add nahi karta.\n\n"
+                    "**Source:** Stage 1 grounding policy."
+                ),
+                "sources": [],
+                "stage": 1,
+            }
+        )
+
+    # Meta: missing rule — only when that IS the question
+    if (not factual_ask) and re.search(
+        r"(rule\s+nahi\s+milta|value\s+ya\s+rule\s+nahi|data\s+nahi\s+mil|"
+        r"if\s+(no|not).*(data|record|rule)|record\s+mein\s+koi)",
+        qlow,
+    ):
+        return jsonify(
+            {
+                "answer": (
+                    "**Direct answer:** Agar indexed emails/documents mein woh value ya rule **nahi** milta, "
+                    "main guess / invent **nahi** karunga.\n\n"
+                    "**Details**\n"
+                    "- Jawab: saaf likhunga ke **Context / tariff sheet mein ye rule available nahi**.\n"
+                    "- Jo milta hai woh dikhata hoon; jo missing hai usay **gap** mein likhta hoon.\n"
+                    "- Tariff numbers ke liye published sheet + calculator — khali email trail se rate nahi gadhna.\n\n"
+                    "**Source:** Stage 1 grounding policy."
+                ),
+                "sources": [],
+                "stage": 1,
+            }
+        )
 
     try:
         hits, entities = retrieve(get_index(), NAMESPACE, question, k=8)
@@ -724,6 +777,30 @@ def ask():
             )
 
     if not hits and not calc_text:
+        if entities.get("wants_draft"):
+            return jsonify(
+                {
+                    "answer": (
+                        "**DRAFT — not sent**\n\n"
+                        "**Subject:** Pre-arrival documents — [VESSEL NAME] / Pakistan call\n\n"
+                        "**Body:**\n"
+                        "Dear Captain,\n\n"
+                        "Good day. Please find below the standard pre-arrival document checklist for the Pakistan call. "
+                        "Kindly send the complete set at the earliest so we may process formalities.\n\n"
+                        "- [Add itemised list from Alpine pre-arrival pack once available in index]\n"
+                        "- Crew list / passenger list (as applicable)\n"
+                        "- Certificates and statutory docs as per agent checklist\n\n"
+                        "Please confirm safe receipt.\n\n"
+                        "Thanks & Regards,\n"
+                        "[Your name] / Alpine Marine Services\n\n"
+                        "**Gap:** Detailed checklist chunk index se is turn retrieve nahi hui — "
+                        "ops apni standard Pakistan pre-arrival list paste kar le / ingest refresh karein. "
+                        "Vessel name intentional placeholder — aap ne vessel name nahi diya."
+                    ),
+                    "sources": [],
+                    "stage": 1,
+                }
+            )
         return jsonify(
             {
                 "answer": "No indexed data found for this query. Run python ingest.py, or rephrase with port/vessel/topic.",
