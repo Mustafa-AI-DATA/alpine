@@ -1,4 +1,4 @@
-"""Load Alpine docs/emails and upsert into Pinecone (hosted embeddings)."""
+"""Load Alpine docs/emails and upsert into Pinecone with rich metadata."""
 
 from __future__ import annotations
 
@@ -25,26 +25,79 @@ from config import (
     PINECONE_REGION,
     ROOT,
 )
+from metadata_utils import build_record_metadata, detect_doc_type
 
 NAMESPACE = "ops"
 
 
-def chunk_text(text: str, size: int = 900, overlap: int = 150) -> list[str]:
-    text = re.sub(r"\s+", " ", text).strip()
+def chunk_text(text: str, size: int = 1200, overlap: int = 200) -> list[str]:
+    """Paragraph-aware chunking; keeps more structure than whitespace-collapse-only."""
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r"\n{3,}", "\n\n", text).strip()
     if not text:
         return []
-    chunks = []
-    i = 0
-    while i < len(text):
-        chunks.append(text[i : i + size])
-        i += max(size - overlap, 1)
+    # Prefer splitting on blank lines / row boundaries
+    parts = re.split(r"\n\s*\n", text)
+    chunks: list[str] = []
+    buf = ""
+    for part in parts:
+        part = part.strip()
+        if not part:
+            continue
+        if len(buf) + len(part) + 1 <= size:
+            buf = f"{buf}\n{part}".strip()
+        else:
+            if buf:
+                chunks.append(buf)
+            if len(part) <= size:
+                buf = part
+            else:
+                # hard wrap long part
+                i = 0
+                while i < len(part):
+                    chunks.append(part[i : i + size])
+                    i += max(size - overlap, 1)
+                buf = ""
+    if buf:
+        chunks.append(buf)
+    # secondary overlap windows for long single chunks already handled
     return chunks
+
+
+def chunk_tariff_rows(text: str) -> list[str]:
+    """One/few tariff rows per chunk so rate lines stay retrievable."""
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    header = ""
+    chunks = []
+    for ln in lines:
+        if ln.lower().startswith("sheet:") or "port charges" in ln.lower() or ln.lower().startswith("s#"):
+            header = ln
+            continue
+        if "|" in ln or re.match(r"^\d+(\.0)?\s", ln):
+            body = f"{header}\n{ln}" if header else ln
+            # attach neighboring context: keep as single-row chunk + short prefix
+            chunks.append(
+                "Port tariff row (PQA & KPT, effective 02-06-2023).\n"
+                "Use for Port Qasim / Karachi rate lookups and GRT/day calculations.\n"
+                + body
+            )
+    # also keep a compact summary chunk
+    if lines:
+        chunks.insert(
+            0,
+            "PORT CHARGES OF PQA & KPT EFFECTIVE FROM 02-06-2023. "
+            "Covers Port Qasim (PQA) and Karachi Port (KPT): pilotage, berth fee, port dues, "
+            "tugs, anchorage, pipeline, shifting, cancellation, Sindh Sales Tax 13%. "
+            "Rates are primarily GRT-based.",
+        )
+    return chunks or chunk_text(text)
 
 
 def read_eml(path: Path) -> str:
     msg = email.message_from_bytes(path.read_bytes(), policy=policy.default)
     parts = []
-    for key in ("From", "To", "Subject", "Date"):
+    for key in ("From", "To", "Cc", "Subject", "Date"):
         if msg.get(key):
             parts.append(f"{key}: {msg.get(key)}")
     texts = []
@@ -102,8 +155,8 @@ def load_documents() -> list[dict]:
         text = text.strip()
         if len(text) < 40:
             return
-        rel = str(path.relative_to(ROOT)) if path.is_relative_to(ROOT) else path.name
-        docs.append({"source": rel, "text": text})
+        rel = str(path.relative_to(ROOT)).replace("\\", "/") if path.is_relative_to(ROOT) else path.name
+        docs.append({"source": rel, "text": text, "doc_type": detect_doc_type(rel, text)})
 
     for folder in DATA_DIRS:
         if not folder.exists():
@@ -160,7 +213,6 @@ def ensure_index(pc: Pinecone):
                 "field_map": {"text": "chunk_text"},
             },
         )
-        # wait until ready
         for _ in range(30):
             desc = pc.describe_index(PINECONE_INDEX)
             status = getattr(desc, "status", None) or {}
@@ -178,20 +230,43 @@ def main():
     print("Loading documents...")
     docs = load_documents()
     print(f"Loaded {len(docs)} source files")
+    by_type: dict[str, int] = {}
+    for d in docs:
+        by_type[d["doc_type"]] = by_type.get(d["doc_type"], 0) + 1
+    print("doc_type counts:", by_type)
 
     pc = Pinecone(api_key=PINECONE_API_KEY)
     index = ensure_index(pc)
 
+    # Clear namespace so old poorly-tagged vectors do not keep biasing retrieval
+    try:
+        print(f"Clearing namespace '{NAMESPACE}' before re-ingest...")
+        index.delete(delete_all=True, namespace=NAMESPACE)
+        time.sleep(2)
+    except Exception as e:
+        print("namespace clear skipped/failed:", e)
+
     batch = []
     total = 0
     for doc in docs:
-        for i, chunk in enumerate(chunk_text(doc["text"])):
-            uid = hashlib.md5(f"{doc['source']}:{i}:{chunk[:80]}".encode()).hexdigest()
+        if doc["doc_type"] == "tariff" or doc["source"].lower().endswith(".xls"):
+            pieces = chunk_tariff_rows(doc["text"])
+        else:
+            pieces = chunk_text(doc["text"])
+
+        for i, chunk in enumerate(pieces):
+            meta = build_record_metadata(doc["source"], chunk)
+            # Force tariff doc_type for xls rows
+            if doc["doc_type"] == "tariff":
+                meta["doc_type"] = "tariff"
+                if meta.get("port") == "NONE":
+                    meta["port"] = "MULTI"
+            uid = hashlib.md5(f"{doc['source']}:{i}:{chunk[:100]}".encode()).hexdigest()
             batch.append(
                 {
                     "_id": uid,
                     "chunk_text": chunk[:3500],
-                    "source": doc["source"],
+                    **meta,
                     "chunk": i,
                 }
             )

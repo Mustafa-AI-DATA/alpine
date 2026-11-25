@@ -42,7 +42,30 @@ python app.py
 
 Open http://127.0.0.1:5055
 
+## Stage 1 scope
+
+- Retrieve / answer from indexed emails & docs
+- Deterministic **PQA/KPT tariff calculations** (GRT, days, charge type)
+- **Email drafts only** — no autonomous send to clients (Phase 2)
+
+## After adding data
+
+```bat
+cd bot
+python ingest.py
+```
+
+Ingest clears and rebuilds the `ops` namespace with metadata (`doc_type`, `vessel`, `port`) so retrieval stays precise as volume grows.
+
+## Example test queries
+
+- `Port Qasim berth fee for 25000 GRT for 3 days`
+- `What are on-signer mandatory documents for crew change?`
+- `Draft an email listing Pakistan pre-arrival ship documents`
+- `Send this to the client` → refused (Stage 1); offers draft instead
+
 ## Notes
 
 - `.env` is gitignored — never commit API keys.
 - Large `.pst` / `.zip` exports are gitignored; place source data under the project folder before ingest.
+- Star Challenger emails are tagged; they are suppressed unless the user asks about that vessel.
